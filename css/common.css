@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+                         mn                                              
+html,body{margin: 0; font-size: 16px;}
+h1,h2,h3,h4,p,figure{margin: 0;}
+ul,ol,li{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+img{vertical-align: middle;}/*하단이 살짝 뜨는걸 방지(항상작성)*/
+a{
+    color: #333;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;/*width나 height가 커지는것을 방지*/
+    font-family: '';
+}
+
+header{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;/*양 끝으로 보냄*/
+    align-items: center;/*세로 가운데 정렬*/
+    padding: 40px 0;
+}
+header h1{
+    font-size: 2.2em;
+}
+header nav{
+
+}
+header nav a{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 50px;
+    display: inline-block;
+}
+header nav a::after{
+    content: '';
+    display: block;
+    margin: 5px auto;
+    border-bottom: 1px solid #000;
+    width: 0%;
+    transition: .5s;
+}
+header nav a:hover::after{width: 100%;}
